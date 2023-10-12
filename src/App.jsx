@@ -49,7 +49,7 @@ const projects = {
         resume: "Développement d'un portfolio.",
         content: "",
         stack: "React, TailwindCSS, Vite",
-        lien: "",
+        lien: "https://github.com/pmadt/portfolio-apprenticeship",
         image: "",
     },
 };
@@ -144,27 +144,38 @@ export default function App() {
                     <Divider/>
 
                     <div
-                        className="my-24 lg:mt-0 lg:py-6 lg:px-16 h-fit lg:h-screen lg:flex lg:flex-col lg:justify-center lg:items-center"
+                        className="my-24 lg:mt-0 lg:py-6 px-8 lg:px-16 h-fit lg:h-screen lg:flex lg:flex-col lg:justify-center lg:items-center"
                         id="section2"
                     >
                         <div className={"flex justify-center"}>
                             <h1 className="text-2xl lg:text-2xl font-bold w-fit ">Rythme d'alternance</h1>
                         </div>
-                        <div className="mt-4 ">
-                            <p className="flex items-center ">
-                                <MdKeyboardArrowRight className={""}/>
-                                Contrat d'<strong> apprentissage</strong>{" "}OU de
-                                professionnalisation (certaines conditions sont requises).
-                            </p>
-                            <p className="flex items-center">
-                                <MdKeyboardArrowRight/>
-                                Parcours alterné de&nbsp;<strong>1013h</strong>&nbsp;sur 24
-                                mois.
-                            </p>
-                            <p className="flex items-center">
-                                <MdKeyboardArrowRight/>
-                                Rythme d'alternance :
-                            </p>
+                        <div className="mt-4">
+                            <div className="flex items-center ">
+                                <MdKeyboardArrowRight className={"text-5xl lg:text-xl lg:mb-0 mb-12"}/>
+                                <p >
+                                    Contrat d'<strong> apprentissage</strong>{" "}OU de
+                                    professionnalisation (certaines conditions sont requises).
+                                </p>
+                            </div>
+
+                            <div className="flex items-center">
+                                <MdKeyboardArrowRight className={"text-xl lg:mb-0 mb-6"}/>
+                                <p >
+
+                                    Parcours alterné de{" "}<strong>1013h</strong>{" "}sur 24
+                                    mois.
+                                </p>
+                            </div>
+
+                            <div className="flex items-center">
+                                <MdKeyboardArrowRight className={"lg:text-xl text-lg"}/>
+
+                                <p >
+                                    Rythme d'alternance :
+                                </p>
+                            </div>
+
                             <ul className="list-disc ml-12">
                                 <li>
                                     <span className="">2 à 3 semaines</span> en formation
@@ -186,9 +197,8 @@ export default function App() {
                     </div>
 
                     <Divider/>
-
                     <div
-                        className="justify-center px-16 flex flex-col items-center h-fit lg:h-screen pt-12 mb-12 lg:mb-0"
+                        className="justify-center px-11 flex flex-col items-center h-fit lg:h-screen pt-12 mb-12 lg:mb-0"
                         id={"section3"}
                     >
                         <p className={"text-2xl font-bold w-fit"}>Projets</p>
@@ -225,11 +235,11 @@ export default function App() {
                     <Divider/>
 
                     <div
-                        className="px-16 pb-12 h-fit lg:h-screen pt-12 lg:pt-0 flex flex-col justify-center items-center"
+                        className="px-8 lg:px-16 pb-12 h-fit lg:h-screen pt-12 lg:pt-0 flex flex-col justify-center items-center"
                         id="section4"
                     >
-                        <div className={"flex justify-center"}>
-                            <p className="text-2xl font-bold w-fit mb-4 ">
+                        <div className={"flex justify-center text-center"}>
+                            <p className="text-2xl font-bold  mb-4 ">
                                 Passions et activités
                             </p>
                         </div>

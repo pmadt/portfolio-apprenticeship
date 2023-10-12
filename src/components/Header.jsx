@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "./Button";
+import Marquee from "react-fast-marquee";
+
 
 export default function Header() {
   const scrollToSection = (sectionId) => {
@@ -23,15 +25,13 @@ export default function Header() {
           </Button>
         </div>
       </div>
-      <div className="relative bg-special-yellow w-full border border-dotted border-neutral-600 ">
-        <marquee className="transition-all duration-50">
-          <div className="flex space-x-72 mt-1 select-none">
-            <p className="">Je recherche activement une alternance !</p>
-            <p className="">Je recherche activement une alternance !</p>
-            <p className="">Je recherche activement une alternance !</p>
-          </div>
-        </marquee>
-      </div>
+      <Marquee className={"relative bg-special-yellow w-full border border-dotted border-neutral-600"} speed={80}>
+        <div className="flex my-1 select-none">
+          <p className="mx-44">Je recherche activement une alternance !</p>
+          <p className="mx-44">Je recherche activement une alternance !</p>
+          <p className="mx-44">Je recherche activement une alternance !</p>
+        </div>
+      </Marquee>
     </div>
   );
 }

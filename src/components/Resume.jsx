@@ -31,10 +31,10 @@ const languages = [
 
 export default function Resume({ openPdfInNewTab }) {
   return (
-    <div className="justify-center h-fit lg:h-screen lg:pt-52 pt-36 bg-soft-grey">
+    <div className="mx-9 h-fit lg:h-screen lg:pt-52 pt-17 bg-soft-grey">
       <div className="lg:flex">
-        <h1 className="text-5xl lg:text-7xl font-bold">Bienvenue sur mon Portfolio!</h1>
-        <div className=" mx-auto mt-4 lg:mt-0 border w-fit h-fit p-2 border-azur-blue hover:border-ruby-red">
+        <h1 className="text-5xl lg:text-7xl font-bold ">Bienvenue sur mon Portfolio!</h1>
+        <div className="mx-auto mt-4 lg:mt-0 border w-fit h-fit p-2 border-azur-blue hover:border-ruby-red">
           <Button
             className="font-bold px-10 py-3 lg:w-56 w-72 h-fit hover:bg-azur-blue-hover bg-azur-blue text-white"
             onClick={() => openPdfInNewTab("/CV0510GEN.pdf")}
@@ -43,7 +43,7 @@ export default function Resume({ openPdfInNewTab }) {
           </Button>
         </div>
       </div>
-      <p className="mt-2 text-xl lg:text-3xl text-left w-11/12">
+      <p className="lg:mt-2 my-4 lg:mb-0 text-xl lg:text-3xl lg:text-left lg:w-11/12 text-justify">
         Je suis{" "}
         <span className="text-ruby-red whitespace-nowrap">
           <u>
@@ -55,7 +55,7 @@ export default function Resume({ openPdfInNewTab }) {
         l'université Panthéon-Sorbonne.
       </p>
 
-      <div className="lg:flex lg:space-x-5 space-y-3 mt-4">
+      <div className="lg:flex lg:space-x-5 lg:space-y-0 space-y-3 mt-4 ">
         {/* Parcours académique */}
         <ResumeSection
           title="Parcours académique"
@@ -111,7 +111,7 @@ export default function Resume({ openPdfInNewTab }) {
         ></ResumeSection>
       </div>
 
-      <div className="mt-8 lg:mt-16 flex justify-center">
+      <div className="mt-8 lg:mt-16 lg:mb-0 mb-8 flex justify-center">
         <div className="hover:border hover:border-neutral-600 hover:border-dashed shadow-inner px-20 py-3 w-fit flex space-x-3 rounded">
           <a
             href="https://github.com/pmadt"

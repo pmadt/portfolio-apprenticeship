@@ -25,7 +25,7 @@ export default function Project({ projectKey, projects, globalClasses }) {
 
     return (
         <>
-            <div className={`border-neutral-600 border flex flex-col rounded p-2 px-6 ${globalClasses}`}>
+            <div className={`border-neutral-600 border flex flex-col rounded p-2 px-6 w-72 lg:w-150  ${globalClasses}`}>
                 <div className="lg:flex mb-1">
                     <h2 className="font-bold text-lg">{title}</h2>
                     <span
@@ -44,12 +44,14 @@ export default function Project({ projectKey, projects, globalClasses }) {
                     </p>
                 </div>
                 <div className="mt-6 ">
-                    <div className={"flex items-center"}>
-                        <HiCodeBracketSquare className={"text-2xl text-neutral-800"}/>
-                        <p className={"text-sm ml-1"}>{stack}</p>
+                    <div className={"lg:flex lg:items-center"}>
+                        <div className={"lg:block flex justify-center"}>
+                            <HiCodeBracketSquare className={"text-2xl text-neutral-800 "}/>
+                        </div>
+                        <p className={"text-sm lg:ml-1 text-center"}>{stack}</p>
                     </div>
 
-                    <div className={"flex text-sm justify-between items-end"}>
+                    <div className={"flex text-sm lg:justify-between lg:items-end justify-center"}>
                         {lien === "" ? (
                             <span className={"text-neutral-500"}>pas de lien public</span>
                         ) : (
