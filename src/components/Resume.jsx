@@ -31,19 +31,19 @@ const languages = [
 
 export default function Resume({ openPdfInNewTab }) {
   return (
-    <div className="justify-center h-screen pt-52 bg-soft-grey">
-      <div className="flex">
-        <h1 className="text-7xl font-bold">Bienvenue sur mon Portfolio!</h1>
-        <div className="border h-fit p-2 border-azur-blue hover:border-ruby-red">
+    <div className="justify-center h-screen lg:pt-52 pt-36 bg-soft-grey">
+      <div className="lg:flex">
+        <h1 className="text-5xl lg:text-7xl font-bold">Bienvenue sur mon Portfolio!</h1>
+        <div className="mt-4 lg:mt-0 border h-fit p-2 border-azur-blue hover:border-ruby-red">
           <Button
-            className="font-bold px-10 py-3 w-56 h-fit hover:bg-azur-blue-hover bg-azur-blue text-white"
+            className="font-bold px-10 py-3 lg:w-56 w-screen h-fit hover:bg-azur-blue-hover bg-azur-blue text-white"
             onClick={() => openPdfInNewTab("/CV0510GEN.pdf")}
           >
             Visualiser mon CV
           </Button>
         </div>
       </div>
-      <p className="mt-2 text-3xl text-left w-11/12">
+      <p className="mt-2 text-xl lg:text-3xl text-left w-11/12">
         Je suis{" "}
         <span className="text-ruby-red whitespace-nowrap">
           <u>
@@ -55,7 +55,7 @@ export default function Resume({ openPdfInNewTab }) {
         l'université Panthéon-Sorbonne.
       </p>
 
-      <div className="flex space-x-5 mt-4">
+      <div className="lg:flex lg:space-x-5 space-y-3 mt-4">
         {/* Parcours académique */}
         <ResumeSection
           title="Parcours académique"
@@ -111,24 +111,24 @@ export default function Resume({ openPdfInNewTab }) {
         ></ResumeSection>
       </div>
 
-      <div className="mt-16 flex justify-center">
+      <div className="mt-8 lg:mt-16 flex justify-center">
         <div className="hover:border hover:border-neutral-600 hover:border-dashed shadow-inner px-20 py-3 w-fit flex space-x-3 rounded">
           <a
             href="https://github.com/pmadt"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsGithub className="cursor-pointer text-2xl hover:bg-ruby-red" />
+            <BsGithub className="cursor-pointer text-4xl lg:text-2xl hover:bg-ruby-red" />
           </a>
           <a
             href="https://www.linkedin.com/in/adnetpaul/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsLinkedin className="cursor-pointer text-2xl hover-bg-ruby-red" />
+            <BsLinkedin className="cursor-pointer text-4xl  lg:text-2xl hover-bg-ruby-red" />
           </a>
           <a href="mailto:adnetpaul6@gmail.com">
-            <BiLogoGmail className="cursor-pointer text-2xl hover:bg-ruby-red" />
+            <BiLogoGmail className="cursor-pointer text-4xl lg:text-2xl hover:bg-ruby-red" />
           </a>
         </div>
       </div>

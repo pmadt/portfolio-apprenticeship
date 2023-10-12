@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Header from "./components/Header";
 import Resume from "./components/Resume";
 import Project from "./components/Project";
@@ -136,7 +136,7 @@ export default function App() {
     <>
       <div className="bg-soft-grey font-Fira selection:bg-neutral-300">
         <Header />
-        <div className={"md:mx-20"}>
+        <div className={"lg:mx-20 mx-2"}>
           <div id={"section1"}>
             <Resume openPdfInNewTab={openPdfInNewTab} />
           </div>
@@ -144,36 +144,36 @@ export default function App() {
           <Divider />
 
           <div
-            className="py-6 px-16 h-screen flex flex-col justify-center items-center"
+            className="lg:py-6 lg:px-16 lg:h-screen lg:flex lg:flex-col lg:justify-center lg:items-center"
             id="section2"
           >
-            <h1 className="text-2xl font-bold w-fit">Rythme d'alternance</h1>
-            <div className="mt-4">
-              <p className="flex items-center">
+            <h1 className="lg:text-2xl lg:font-bold lg:w-fit">Rythme d'alternance</h1>
+            <div className="lg:mt-4">
+              <p className="lg:flex lg:items-center">
                 <MdKeyboardArrowRight />
                 Contrat d'<strong> apprentissage</strong>&nbsp;OU de
                 professionnalisation (certaines conditions sont requises).
               </p>
-              <p className="flex items-center">
+              <p className="lg:flex lg:items-center">
                 <MdKeyboardArrowRight />
                 Parcours alterné de&nbsp;<strong>1013h</strong>&nbsp;sur 24
                 mois.
               </p>
-              <p className="flex items-center">
+              <p className="lg:flex lg:items-center">
                 <MdKeyboardArrowRight />
                 Rythme d'alternance :
               </p>
-              <ul className="list-disc ml-12">
+              <ul className="lg:list-disc lg:ml-12">
                 <li>
                   <span className="">2 à 3 semaines</span> en formation
                 </li>
-                <li className="font-bold">2 à 3 semaines en entreprise</li>
+                <li className="lg:font-bold">2 à 3 semaines en entreprise</li>
               </ul>
             </div>
 
-            <div className="flex justify-center">
+            <div className="lg:flex lg:justify-center">
               <Button
-                className="mt-8 font-bold px-10 py-3 w-56 h-fit hover:bg-azur-blue-hover bg-azur-blue text-white"
+                className="lg:mt-8 lg:font-bold lg:px-10 lg:py-3 lg:w-56 lg:h-fit hover:bg-azur-blue-hover bg-azur-blue text-white"
                 onClick={() => {
                   openPdfInNewTab("/Calendrier Alternance 2023.pdf");
                 }}
@@ -186,7 +186,7 @@ export default function App() {
           <Divider />
 
           <div
-            className=" justify-center px-16 flex flex-col items-center h-screen pt-12"
+            className="justify-center px-16 flex flex-col items-center h-screen pt-12"
             id={"section3"}
           >
             <p className={"text-2xl font-bold w-fit"}>Projets</p>
