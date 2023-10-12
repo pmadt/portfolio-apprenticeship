@@ -26,10 +26,10 @@ export default function Project({ projectKey, projects, globalClasses }) {
     return (
         <>
             <div className={`border-neutral-600 border flex flex-col rounded p-2 px-6 ${globalClasses}`}>
-                <div className="flex mb-1">
+                <div className="lg:flex mb-1">
                     <h2 className="font-bold text-lg">{title}</h2>
                     <span
-                        className={`ml-2 inline-flex flex-shrink-0 items-center rounded-md px-1.5 text-xs font-medium ${projectTypeClass} `}>
+                        className={`lg:ml-2 inline-flex flex-shrink-0 items-center rounded-md py-1 lg:py-0 px-3 ring-1 lg:ring-0 lg:px-1.5 text-xs font-medium ${projectTypeClass} `}>
                         {type}
                     </span>
                 </div>
@@ -37,7 +37,7 @@ export default function Project({ projectKey, projects, globalClasses }) {
                     <p className={"text-neutral-500 italic text-sm"}>{resume}</p>
                 </div>
                 <div className={"mt-4 flex-grow"}>
-                    <p className={"text-justify text-sm"}>
+                    <p className={"lg:text-justify text-sm"}>
                         {contentLines.map((line, index) => (
                             <p key={index}>{line}</p>
                         ))}

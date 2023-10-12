@@ -10,9 +10,9 @@ export default function Header() {
   };
 
   return (
-    <div className="fixed top-0 w-full z-50">
+    <div className="lg:fixed top-0 lg:w-full w-screen z-50">
       <div className="bg-basic-yellow py-3 px-6 flex justify-between items-center">
-        <div className="ml-auto space-x-2">
+        <div className="lg:ml-auto lg:space-x-2 lg:flex lg:gap-0 grid gap-2 grid-cols-2 ">
           <Button onClick={() => scrollToSection("section1")}>Résumé</Button>
           <Button onClick={() => scrollToSection("section2")}>
             Rythme d'alternance

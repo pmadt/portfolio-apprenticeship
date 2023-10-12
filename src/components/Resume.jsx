@@ -31,12 +31,12 @@ const languages = [
 
 export default function Resume({ openPdfInNewTab }) {
   return (
-    <div className="justify-center h-screen lg:pt-52 pt-36 bg-soft-grey">
+    <div className="justify-center h-fit lg:h-screen lg:pt-52 pt-36 bg-soft-grey">
       <div className="lg:flex">
         <h1 className="text-5xl lg:text-7xl font-bold">Bienvenue sur mon Portfolio!</h1>
-        <div className="mt-4 lg:mt-0 border h-fit p-2 border-azur-blue hover:border-ruby-red">
+        <div className=" mx-auto mt-4 lg:mt-0 border w-fit h-fit p-2 border-azur-blue hover:border-ruby-red">
           <Button
-            className="font-bold px-10 py-3 lg:w-56 w-screen h-fit hover:bg-azur-blue-hover bg-azur-blue text-white"
+            className="font-bold px-10 py-3 lg:w-56 w-72 h-fit hover:bg-azur-blue-hover bg-azur-blue text-white"
             onClick={() => openPdfInNewTab("/CV0510GEN.pdf")}
           >
             Visualiser mon CV
@@ -81,7 +81,7 @@ export default function Resume({ openPdfInNewTab }) {
         <ResumeSection
           title="Stack technologique"
           content={
-            <div className="flex flex-wrap w-96">
+            <div className="flex flex-wrap lg:w-96 w-fit">
               {techStack.map((tech, index) => (
                 <div key={index} className="flex items-center">
                   <p className="bg-green-400 whitespace-nowrap m-1">{tech}</p>
